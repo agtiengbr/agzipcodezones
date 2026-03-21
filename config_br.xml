@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<module>
+    <name>agzipcodezones</name>
+    <displayName><![CDATA[Regi&otilde;es por Faixas de CEP]]></displayName>
+    <version><![CDATA[1.2.3]]></version>
+    <description><![CDATA[Este m&oacute;dulo permite o cadastro de faixas de CEP para as regi&otilde;es de sua loja PrestaShop, permitindo que voc&ecirc; configure os pre&ccedil;os de frete para cada uma delas.]]></description>
+    <author><![CDATA[AGTI]]></author>
+    <tab><![CDATA[shipping_logistics]]></tab>
+    <is_configurable>1</is_configurable>
+    <need_instance>1</need_instance>
+	<limited_countries></limited_countries>
+</module>

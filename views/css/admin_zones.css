@@ -1,0 +1,44 @@
+.modal.agzipcodezones.in {
+	display: flex !important;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal.agzipcodezones .form-control {
+	display: inline;
+}
+
+.modal.agzipcodezones h2{
+	text-align: center;
+	margin-top: 0px;
+}
+
+.modal.agzipcodezones .intervals-list .row{
+	margin: 10px 10px;
+}
+
+.modal.agzipcodezones .intervals-list input{
+	width: 100px;
+	margin: 0 5px;
+	padding: 2px 10px;
+}
+
+.modal.agzipcodezones .btn-new-interval {
+	margin: 0 5px;	
+}
+
+.modal.agzipcodezones .btn-new-interval i{
+	margin-right: 5px;
+}
+
+.intervals-list .row .btn {
+	padding: 7px 8px;
+    position: relative;
+    bottom: 1px;
+}
+
+.intervals-list {
+	max-height: 70vh;
+    overflow-y: scroll;
+    margin-bottom: 20px;
+}
