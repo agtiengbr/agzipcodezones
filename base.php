@@ -14,7 +14,7 @@ class BaseAgZipCodeZones extends AgGridModule
     {
         $this->name     = 'agzipcodezones';
         $this->tab      = 'shipping_logistics';
-        $this->version  = '1.5.6';
+        $this->version  = '1.6.0';
         $this->author   = 'AGTI';
 
         $this->bootstrap = true;
