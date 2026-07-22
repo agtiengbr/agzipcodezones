@@ -7,7 +7,7 @@ on:
     paths:
       - 'base.php'
       - 'agzipcodezones.php'
-      - '.github/workflows/release.yml'
+  workflow_dispatch:
 
 permissions:
   contents: write
@@ -56,14 +56,20 @@ jobs:
 
       - name: Check if release already exists
         id: check
+        env:
+          GH_TOKEN: ${{ github.token }}
         run: |
           TAG="${{ steps.version.outputs.tag }}"
-          if git rev-parse -q --verify "refs/tags/${TAG}" >/dev/null; then
+          if gh release view "$TAG" >/dev/null 2>&1; then
             echo "exists=true" >> "$GITHUB_OUTPUT"
-            echo "Tag ${TAG} already exists. Nothing to release."
+            echo "Release ${TAG} already exists. Nothing to do."
           else
             echo "exists=false" >> "$GITHUB_OUTPUT"
-            echo "New version detected: ${TAG}"
+            if git rev-parse -q --verify "refs/tags/${TAG}" >/dev/null; then
+              echo "Tag ${TAG} exists without a GitHub release — will publish."
+            else
+              echo "New version detected: ${TAG}"
+            fi
           fi
 
       - name: Build PrestaShop module ZIP
