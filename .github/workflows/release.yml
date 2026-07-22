@@ -7,6 +7,7 @@ on:
     paths:
       - 'base.php'
       - 'agzipcodezones.php'
+      - '.github/workflows/release.yml'
   workflow_dispatch:
 
 permissions:
