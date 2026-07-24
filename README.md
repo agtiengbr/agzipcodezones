@@ -12,6 +12,8 @@ Serviços de suporte técnico estão disponíveis mediante contratação. Solici
 
 **suporte@agti.eng.br**
 
+Página do produto na AGTI: https://www.agti.eng.br/12-modulo-para-controle-de-regioes-por-faixas-de-cep.html
+
 ## Instalação
 
 1. Copie a pasta do módulo para o diretório `modules/` da sua instalação PrestaShop.
